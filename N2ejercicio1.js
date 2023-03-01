@@ -24,17 +24,13 @@ let salaries = [{
 }];
 
 
-/*console.log(employees.find(obj=> obj.id === id))}
-getEmployee(3)
-
-console.log("test")*/
 
 
 const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                    if  (employees.findIndex(index=> index.id == id) != -1){
                                         var employee  = employees.find(obj => obj.id == id)
                                         var esalary = salaries.find(obj => obj.id == id)
-                                        resolve (`nombre: ${employee.name} ,                salario:${esalary.salary}`)
+                                        resolve (`nombre: ${employee.name} ,                                                salario:${esalary.salary}`)
                                     
                                    } else {reject("el id no se encuentra en la base") }
                                             })}
