@@ -35,7 +35,7 @@ const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                    } else {reject("el id no se encuentra en la base") }
                                             })}
 
-*/
+
 
 const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                    if  (employees.findIndex(index=> index.id == id) != -1){var employee  = employees.find(obj => obj.id == id)                                    
@@ -45,3 +45,12 @@ const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                             })}
 
 */
+
+const getemployees = (id)=> {return new Promise((resolve,reject)=>{
+    if  (employees.findIndex(index=> index.id == id) != -1){
+        var employee  = employees.find(obj => obj.id == id)                                    
+         resolve (employee)
+     
+    } else {reject("el id no se encuentra en la base") }
+             })}
+

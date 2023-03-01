@@ -36,6 +36,7 @@ function test (employe) {var sal = salaries.find(ob => ob.id == employe.id )
 
 //function test (employe) {return salaries.find(ob => ob.id == employe.id ).salary  }
 
-var getSalary = (employe)=>  salaries.find(ob => ob.id == employe.id ).salary
+var getSalary = (employe)=> new Promise ((resolve , reject)=>{
+                             resolve(salaries.find(ob => ob.id == employe.id ).salary)}) 
 
-console.log(getSalary(employees[1]))
+getSalary (employees[0]).then(msg => console.log(msg))
