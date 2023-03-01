@@ -36,4 +36,3 @@ const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                             })}
 
 */
-getemployees(5).then(msg => console.log(msg)).catch(msg => console.log(msg))
