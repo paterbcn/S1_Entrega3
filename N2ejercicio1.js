@@ -23,7 +23,7 @@ let salaries = [{
     salary: 2000
 }];
 
-
+/*
 
 
 const getemployees = (id)=> {return new Promise((resolve,reject)=>{
@@ -35,5 +35,5 @@ const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                    } else {reject("el id no se encuentra en la base") }
                                             })}
 
-
+*/
 getemployees(5).then(msg => console.log(msg)).catch(msg => console.log(msg))
