@@ -29,3 +29,6 @@ function getEmployee(id) = return {
     console.log(employees.find(obj=> obj.id === id))}
 getEmployee(3)
 
+console.log("test")
+
+
