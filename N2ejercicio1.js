@@ -23,4 +23,9 @@ let salaries = [{
     salary: 2000
 }];
 
-console.log("test")
+
+function getEmployee(id) = return {
+    
+    console.log(employees.find(obj=> obj.id === id))}
+getEmployee(3)
+
