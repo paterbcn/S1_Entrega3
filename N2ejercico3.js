@@ -1,2 +1,1 @@
-/*Invoca la primera funció getEmployee() i després getSalary() niant l'execució de les dues promises de manera que es retorni per la consola el nom de l'empleat/da i el seu salari.*/
-
+/*Invoca la primera función getEmployee() y después getSalary() anidando la ejecución de las dos promisas de forma que se devuelva por la consola el nombre del empleado/a y su salario.*/
