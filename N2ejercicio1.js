@@ -36,3 +36,12 @@ const getemployees = (id)=> {return new Promise((resolve,reject)=>{
                                             })}
 
 */
+
+const getemployees = (id)=> {return new Promise((resolve,reject)=>{
+                                   if  (employees.findIndex(index=> index.id == id) != -1){var employee  = employees.find(obj => obj.id == id)                                    
+                                        resolve (id)
+                                    
+                                   } else {reject("el id no se encuentra en la base") }
+                                            })}
+
+*/
